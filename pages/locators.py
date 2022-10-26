@@ -5,6 +5,7 @@ class MainPageLocators():
 
     CATALOGUE_LINK = (By.XPATH, "//ul[@id='browse']//ul//a")
     LOGIN_BTN = (By.CSS_SELECTOR, '#login_link')
+    ADD_ITEM_BTN = (By.XPATH, "//div[@class='product_price']//button[@class='btn btn-primary btn-block']")
 
 class LoginPageLocators():
 
@@ -18,3 +19,7 @@ class LoginPageLocators():
 class BasePageLocators():
 
     USER_ICON = (By.CSS_SELECTOR, '.icon-user') # CSS_SELECTOR если стоит . это значит что мы ищем по class
+
+class BasketPageLocators():
+
+    VIEW_BASKET_BTN = (By.XPATH, "//div[@class='alert alert-safe alert-noicon alert-info  fade in']//a[@class='btn btn-info']")

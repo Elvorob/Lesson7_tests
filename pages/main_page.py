@@ -12,3 +12,6 @@ class MainPage(BasePage):
 
     def go_to_logi_page(self):
         self.browser.find_element(*MainPageLocators.LOGIN_BTN).click()
+
+    def click_add_to_basket_button(self):
+        self.browser.find_element(*MainPageLocators.ADD_ITEM_BTN).click()
