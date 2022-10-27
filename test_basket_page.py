@@ -6,10 +6,6 @@ from .pages.main_page import MainPage
 
 
 def test_add_item_to_catalog(browser):
-    # link = 'https://selenium1py.pythonanywhere.com/en-gb/accounts/login/'
-    # page = LoginPage(browser, link)
-    # page.open_page()
-    # page.register_user(email=str(time.time()) + '@list.ru', password=']ncPWkokU2sB7h3')
     link = 'https://selenium1py.pythonanywhere.com/en-gb/'
     page = MainPage(browser, link)
     page.open_page()
