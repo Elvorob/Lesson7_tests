@@ -54,13 +54,12 @@ def add_item_to_catalog(browser):
     page = LoginPage(browser, link)
     page.open_page()
     page.register_user(email=str(time.time()) + '@list.ru', password=']ncPWkokU2sB7h3')
-    page.should_be_autorized_user()
-    link = 'https://selenium1py.pythonanywhere.com/en-gb/'
-    page = MainPage(browser, link)
-    page.open_page()
-    # page.should_be_view_products()
-    page.go_to_catalogue()
-    page.click_add_to_basket_button()
+    # page.should_be_autorized_user()
+    # link = 'https://selenium1py.pythonanywhere.com/en-gb/'
+    # page = MainPage(browser, link)
+    # page.open_page()
+    # page.go_to_catalogue()
+    # page.click_add_to_basket_button()
     link = 'https://selenium1py.pythonanywhere.com/en-gb/catalogue/'
     page = BasketPage(browser, link)
     page.open_page()

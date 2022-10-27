@@ -22,4 +22,5 @@ class BasePageLocators():
 
 class BasketPageLocators():
 
-    VIEW_BASKET_BTN = (By.XPATH, "//div[@class='alert alert-safe alert-noicon alert-info  fade in']//a[@class='btn btn-info']")
+    VIEW_BASKET_BTN = (By.XPATH, '//a[@href="/en-gb/basket/"]')
+    CHECKOUT_BTN = (By.XPATH, '//a[@href="/en-gb/checkout/"]')
