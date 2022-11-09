@@ -1,0 +1,6 @@
+[
+  "test_basket_page.py::test_add_item_to_catalog",
+  "test_main_page.py::test_guest_can_go_to_catalogue",
+  "test_main_page.py::test_guest_can_go_to_login_page",
+  "test_main_page.py::test_user_should_be_autorized"
+]
