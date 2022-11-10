@@ -5,7 +5,7 @@ from .pages.login_page import LoginPage
 from .pages.base_page import BasePage
 from .pages.basket_page import BasketPage
 
-link = 'https://selenium1py.pythonanywhere.com/ru/'
+link = "https://selenium1py.pythonanywhere.com/ru/"
 
 
 # class TestMainPage():
@@ -41,26 +41,28 @@ def test_guest_can_go_to_login_page(browser):
     page = LoginPage(browser, link)
     page.should_be_login_page()
 
+
 def test_user_should_be_autorized(browser):
-    link = 'https://selenium1py.pythonanywhere.com/en-gb/accounts/login/'
+    link = "https://selenium1py.pythonanywhere.com/en-gb/accounts/login/"
     page = LoginPage(browser, link)
     page.open_page()
-    page.register_user(email=str(time.time()) + '@list.ru', password=']ncPWkokU2sB7h3')
+    page.register_user(email=str(time.time()) + "@list.ru", password="]ncPWkokU2sB7h3")
     page.should_be_autorized_user()
+
 
 @pytest.mark.smoke
 def add_item_to_catalog(browser):
-    link = 'https://selenium1py.pythonanywhere.com/en-gb/accounts/login/'
+    link = "https://selenium1py.pythonanywhere.com/en-gb/accounts/login/"
     page = LoginPage(browser, link)
     page.open_page()
-    page.register_user(email=str(time.time()) + '@list.ru', password=']ncPWkokU2sB7h3')
+    page.register_user(email=str(time.time()) + "@list.ru", password="]ncPWkokU2sB7h3")
     # page.should_be_autorized_user()
     # link = 'https://selenium1py.pythonanywhere.com/en-gb/'
     # page = MainPage(browser, link)
     # page.open_page()
     # page.go_to_catalogue()
     # page.click_add_to_basket_button()
-    link = 'https://selenium1py.pythonanywhere.com/en-gb/catalogue/'
+    link = "https://selenium1py.pythonanywhere.com/en-gb/catalogue/"
     page = BasketPage(browser, link)
     page.open_page()
     page.click_view_basket_btn()

@@ -2,7 +2,7 @@ from selenium.common.exceptions import NoSuchElementException
 from .locators import BasePageLocators
 
 
-class BasePage():
+class BasePage:
     def __init__(self, browser, link):
         self.browser = browser
         self.link = link
@@ -14,7 +14,7 @@ class BasePage():
         try:
             self.browser.find_element(method, locator)
         except NoSuchElementException:
-             return False
+            return False
         return True
 
     def should_be_autorized_user(self):
