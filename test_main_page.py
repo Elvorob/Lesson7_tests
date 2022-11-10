@@ -68,3 +68,6 @@ def add_item_to_catalog(browser):
     page.open_page()
     page.click_view_basket_btn()
     time.sleep(3)
+
+
+#
